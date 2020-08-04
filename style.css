@@ -485,10 +485,12 @@ nav {
   width: 100%;
   border: 2px solid #ffffff;
   border-radius: 10px;
-
   background-color: #5d62b5;
   color: #fff;
   padding-left: 20px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
 }
 .col input,
 .col select {
