@@ -14,6 +14,6 @@ const updateCounter = () => {
   }
 };
 
-contactSection.addEventListener("touchstart mouseover", () => {
+contactSection.addEventListener("mouseover", () => {
   updateCounter()
 });
