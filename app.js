@@ -1,9 +1,13 @@
+// get counter element
 const counter = document.querySelector(".counter");
+// step
 const speed = 38;
-// const contactSection = document.querySelector(".contact");
+
 
 const updateCounter = () => {
+  // get the target value
   const target = counter.getAttribute("data-target");
+  
   const count = +counter.innerText;
 
   if (count < target) {
