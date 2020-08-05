@@ -227,8 +227,8 @@ nav {
 }
 .blue-container {
   width: 100%;
-  height: 100%;
-  min-height: 700px;
+  height: 700px;
+
   background-color: #5d62b5;
   border-radius: 40px;
   padding: 6rem;
@@ -286,6 +286,11 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
+  width: 80%;
+}
+.about-dog img {
+  width: 100%;
+  height: auto;
 }
 
 /* fetures */
@@ -431,6 +436,7 @@ nav {
 .contact-content {
   display: flex;
   align-items: center;
+  padding-bottom: 10rem;
 }
 .contact-content img {
   position: absolute;
@@ -489,12 +495,16 @@ nav {
   color: #fff;
   padding-left: 20px;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: #fff;
 }
 .col input,
 .col select {
   height: 50px;
+}
+.col textarea {
+  padding-top: 15px;
 }
 
 /* for hiding a select dropdown arrow */
@@ -522,7 +532,6 @@ nav {
   text-align: center;
   z-index: 10;
   height: 650px;
-  
 }
 .counter-content h3 {
   font-size: 3rem;
@@ -530,7 +539,6 @@ nav {
   font-weight: 900;
   line-height: 36px;
   margin-top: 18rem;
-  
 }
 .counter-content p {
   font-size: 9rem;
@@ -544,4 +552,139 @@ nav {
   color: #fff;
   font-weight: 900;
   line-height: 2.6rem;
+}
+
+/* Gallery */
+.tabSection {
+  position: relative;
+}
+.tabBtns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.tabBtn {
+  padding: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 0px solid rgba(255, 255, 255, 0.15);
+  transition: border-bottom 0.3s ease-in-out;
+  position: relative;
+}
+.tabActive {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.795);
+  font-weight: bold;
+}
+.live {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.5rem;
+  color: #d5d5d5;
+}
+.liveActive {
+  color: #62b58f;
+}
+.tab {
+  max-width: 900px;
+  height: 500px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.about-dog iframe {
+  box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24),
+    0px 16px 24px rgba(38, 38, 38, 0.2);
+  border-radius: 50px;
+}
+.tabBlob {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  z-index: -2;
+}
+
+/* Testimonials */
+/* The holy albatross --- google it  */
+.testimonials {
+  padding: 3rem 0;
+}
+.columns {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.columns > * {
+  flex-basis: calc(calc(900px - 100%) * 999);
+  flex-grow: 1;
+}
+.cards {
+  max-width: 500px;
+  height: 340px;
+}
+.cards .overline {
+  margin-top: 0;
+  color: #5d62b5;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+.cards h3 {
+  font-size: 3.6rem;
+}
+.testimonialCard {
+  background-color: #fff;
+  padding: 4.5rem;
+  border-radius: 20px;
+}
+.testimonialContent {
+  max-width: 60ch;
+}
+.testimonialContent p {
+  font-size: 1.6rem;
+  color: #4b4b4b;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.testimonialAuthor {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+.authorName{
+  margin-left: 17px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color:  #F2726F;
+}
+
+/* 
+  ====================================
+  =========--- Animations ---=========
+  ====================================
+*/
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

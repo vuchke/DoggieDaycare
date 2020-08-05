@@ -124,7 +124,9 @@
             </p>
             <img class="about-blob" src="./img/blob2.png" alt="" />
           </div>
-          <img class="about-dog" src="./img/dogFace.png" alt="" />
+          <div class="about-dog">
+            <img src="./img/dogFace.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -269,14 +271,14 @@
     <!-- services end -->
 
     <!-- Contact -->
-    <section class="contact" >
+    <section class="contact">
       <div class="container">
         <div class="contact-content">
-          <img class="form-circles" src="./img/Stylize Circles4.png" alt="">
+          <img class="form-circles" src="./img/Stylize Circles4.png" alt="" />
           <div class="form-blob">
-            <img  src="./img/formBlob.png" alt="">
+            <img src="./img/formBlob.png" alt="" />
           </div>
-          
+
           <div class="form-content">
             <h2>Make an appointment</h2>
             <form action="">
@@ -288,7 +290,7 @@
                   <input type="email" name="" id="" placeholder="Email" />
                 </div>
               </div>
-             
+
               <div class="row">
                 <div class="col">
                   <input type="tel" name="" id="" placeholder="Phone Number" />
@@ -306,9 +308,7 @@
                   </select>
                 </div>
               </div>
-              <div class="row">
-               
-              </div>
+              <div class="row"></div>
               <div class="row">
                 <div class="col">
                   <textarea
@@ -327,9 +327,118 @@
 
           <div class="counter-content" id="counter">
             <h3>Maxime placeat facere possimus omnis</h3>
-            <p><span class="counter" data-target='5700' >0</span>+</p>
+            <p><span class="counter" data-target="5700">0</span>+</p>
             <h5>Customers served</h5>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact end -->
+
+    <!-- Gallery -->
+    <section class="about tabSection">
+      <div class="container">
+        <div class="about-content">
+          <div class="blue-container">
+            <div class="overline">
+              <p>
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+                GALLERY & LIVE STREAMS
+              </p>
+            </div>
+            <h2>Check out our hard workers</h2>
+
+            <div class="tabBtns">
+              <button class="tabBtn tabActive" onclick="openTab('Tab1')">
+                Gallery
+              </button>
+              <button class="tabBtn" onclick="openTab('Tab2')">
+                Live Stream: Yard 1 <span class="live">&#8226;</span>
+              </button>
+              <button class="tabBtn" onclick="openTab('Tab3')">
+                Live Stream: Yard 2 <span class="live liveActive">&#8226;</span>
+              </button>
+              <button class="tabBtn" onclick="openTab('Tab4')">
+                Live Stream: Yard 3 <span class="live liveActive">&#8226;</span>
+              </button>
+            </div>
+
+            <div id="Tab1" class="about-dog tab">
+              <img src="./img/dogFace.png" alt="" />
+            </div>
+
+            <div id="Tab2" class="about-dog tab" style="display: none;">
+              <img src="./img/galleryLive1.png" alt="" />
+            </div>
+
+            <div id="Tab3" class="about-dog tab" style="display: none;">
+              <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/uON_08RFCyE"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="Tab4" class="about-dog tab" style="display: none;">
+              <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/8wA8M8MoEjQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="tabBlob" src="./img/tabBlob.png" alt="" />
+    </section>
+    <!-- Gallery end -->
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="columns">
+
+          <div class="cards">
+            <div class="overline">
+              <p>
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+                Our Customers
+              </p>
+            </div>
+            <h3>Illum qui dolorem eum quo voluptas ut distinctio</h3>
+          </div>
+
+          <div class="cards">
+            <div class="testimonialCard">
+              <div class="testimonialContent">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”</p>
+              </div>
+              <div class="testimonialAuthor">
+                <img class="authorImg" src="./img/author1.png" alt="">
+                <h5 class="authorName">Cullen Bohannon</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="testimonialCard">
+              <div class="testimonialContent">
+                <p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ipsam voluptatem aspernatur.”</p>
+              </div>
+              <div class="testimonialAuthor">
+                <img class="authorImg" src="./img/author2.png" alt="">
+                <h5 class="authorName">Jennifer Thomas</h5>
+              </div>
+            </div>
+          </div>         
+
         </div>
       </div>
     </section>
