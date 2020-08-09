@@ -214,13 +214,13 @@ nav {
   position: absolute;
   right: -8rem;
   top: -20rem;
-  z-index: 16;
+  z-index: 15;
 }
 
 .about-content {
   width: 100%;
   height: 100%;
-  min-height: 850px;
+  height: 850px;
   position: relative;
   top: -8rem;
   z-index: 15;
@@ -860,22 +860,40 @@ footer .row {
   html {
     font-size: 8px;
   }
-  .about-content {
-    min-height: 650px;
+  .cta-btn {
+    line-height: 1;
   }
-  .blue-container {
+  .nav-list {
+    align-items: center;
+  }
+  .about .about-content {
+    height: 650px;
+  }
+  .about .blue-container {
     height: 500px;
+  }
+  .about .about-blob {
+    bottom: 0;
+    width: 80%;
+    height: auto;
   }
 
   .tabSection .about-dog {
     bottom: -100px;
   }
- 
+  .tab iframe {
+    height: 300px;
+  }
+
   .columns .cards {
     height: 100%;
   }
   .testimonialContent {
     height: 100%;
+  }
+
+  .stats-card {
+    margin: 2rem;
   }
 
   .footer-columns {
@@ -901,6 +919,115 @@ footer .row {
   }
   .testimonialAuthor {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 6px;
+  }
+
+  .logo {
+    max-width: 70px;
+    max-height: 100%;
+  }
+  .logo img {
+    max-width: 70px;
+    max-height: 40px;
+    padding: 5px;
+  }
+  .utility-content {
+    justify-content: space-between;
+  }
+  .hero {
+    max-height: 100vh;
+  }
+  .about .about-content {
+    height: 450px;
+  }
+  .about-content .blue-container {
+    height: 300px;
+    padding-top: 3rem;
+  }
+  .features-card{
+    justify-content: center;
+  }
+  .services-card {
+    min-height: 200px;
+  }
+  .contact-content {
+    flex-wrap: wrap;
+  }
+  .contact-content img {
+    height: auto;
+  }
+
+  .counter-content {
+    order: 1;
+    height: 100%;
+    width: 100%;
+  }
+  .form-content {
+    order: 2;
+    height: 100%;
+  }
+  .tabSection{
+    margin: 10rem 0;
+  }
+  .tabSection .about-content {
+    height:100%;
+  }
+
+  .tabSection .about-dog{
+    bottom: -10px;
+  }
+  .tab {
+   height: auto;
+    position: relative;
+  }
+  .tab iframe {
+    height: 200px;
+  }
+
+  .top-row {
+    justify-content: center;
+  }
+  .stats-heading,
+  .stats-picture {
+    width: 100%;
+  }
+
+  .stats-heading {
+    order: 2;
+    z-index: 5;
+  }
+  .stats-picture {
+    order: 1;
+    height: 50px;
+  }
+  .stats-picture img {
+   left: 50%;
+   transform: translateX(-50%);
+  }
+  .statsDog {
+    left: 0;
+    width: 230px;
+    height: auto;
+  }
+  .stats-row{
+    padding-bottom: 15rem;
+  }
+  .stats-card{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cta-content{
+    padding: 0 2rem;
+  }
+
+  .footer-columns{
+    height: auto;
   }
 }
 
