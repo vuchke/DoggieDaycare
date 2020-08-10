@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
@@ -153,13 +156,6 @@ nav {
   font-weight: 700;
 }
 /* Mob Nav */
-
-.mob-top-nav {
-  display: none;  
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
 .mob-nav {
   display: none;  
   overflow: hidden;
@@ -1013,8 +1009,7 @@ footer .row {
   .top-nav {
     display: none;
   }
-  .mob-nav,
-  .mob-top-nav {
+  .mob-nav {
     display: block;
   }
   .mob-logo {
@@ -1025,7 +1020,7 @@ footer .row {
   .mob-logo img {
     width: 130px;
   }
-  .mob-top-nav .utility-content p {
+  .mob-nav .utility-content p {
     font-size: 3vw;
     margin-bottom: 5px;
   }
@@ -1079,7 +1074,7 @@ footer .row {
   }
   .form-content {
     order: 2;
-    width: 100%;
+    height: 100%;
   }
   .tabSection {
     margin: 10rem 0;
@@ -1141,7 +1136,7 @@ footer .row {
   }
 }
 
-@media screen and (max-width: 458px) {
+@media screen and (max-width: 650px) {
   .link-list {
     order: 0;
   }
