@@ -1,3 +1,13 @@
+// Mobile Nav
+const mobNav = document.querySelector('.mob-nav')
+
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+
+hamburgerMenu.addEventListener('click', function() {
+ mobNav.classList.toggle('open')
+})
+
+
 // get counter element
 const counter = document.querySelector(".counter");
 // step
