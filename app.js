@@ -1,5 +1,5 @@
 // Mobile Nav
-const mobNav = document.querySelector('.mob-nav')
+const mobNav = document.querySelector('.mob-nav-menu')
 
 const hamburgerMenu = document.querySelector('.hamburger-menu')
 
