@@ -24,7 +24,6 @@ p {
   font-size: 1.6rem;
 }
 
-
 header {
   z-index: 1000;
   position: absolute;
@@ -157,7 +156,6 @@ nav {
 /* Mob Nav */
 .mob-nav {
   display: none;
-  
 }
 .hamburger-menu {
   position: fixed;
@@ -266,7 +264,7 @@ nav {
   width: 100%;
   height: 800px;
 
-  background: url("./img/heroBG.png") center no-repeat;
+  background: url("./img/heroBG.webp") center no-repeat;
   background-size: cover;
   top: 0;
   z-index: 1;
@@ -425,7 +423,7 @@ nav {
 .video {
   width: 100%;
   height: 500px;
-  background: url("./img/videoBg.png") center no-repeat;
+  background: url("./img/videoBg.webp") center no-repeat;
   background-size: cover;
 }
 
@@ -511,7 +509,7 @@ nav {
 /* contact */
 .contact {
   width: 100%;
-  background: url("./img/contactBg.png") center no-repeat;
+  background: url("./img/contactBg.webp") center no-repeat;
   background-size: cover;
 }
 
@@ -686,7 +684,7 @@ nav {
   top: -10%;
   left: 0;
   z-index: -2;
-  
+
   height: 100%;
 }
 
@@ -1048,7 +1046,7 @@ footer .row {
   .hero {
     max-height: 100vh;
   }
-  .about .aboutCircles{
+  .about .aboutCircles {
     right: 0;
     z-index: 10;
   }
